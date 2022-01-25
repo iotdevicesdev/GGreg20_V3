@@ -27,7 +27,12 @@ static unsigned long meas_start = now;  // One minute timer comparison variable
           static int ma5_arr_elements;  // Moving average array number of elements are filled
          static byte i = 0;
 
-// Class
+/**************************************************************************/
+/*!
+    @brief  GGreg20_V3 Driver Library Class
+    @param  pin A pin connected to the controller GPIO to handle external interrupts
+*/
+/**************************************************************************/
 GGreg20_V3::GGreg20_V3(int pin)
 {
   _pin = pin;
@@ -35,7 +40,13 @@ GGreg20_V3::GGreg20_V3(int pin)
 
 }
 
-// Init public method
+
+/**************************************************************************/
+/*!
+    @brief  Initial library setup public method
+    @param  pin A pin connected to the controller GPIO to handle external interrupts
+*/
+/**************************************************************************/
 int GGreg20_V3::begin(int pin){
   now = millis();
   meas_start = now;
@@ -54,12 +65,22 @@ int GGreg20_V3::begin(int pin){
   attachInterrupt(digitalPinToInterrupt(pin), counter, LOW);
 }
 
-// More acurate timer control public method for void loop()
+
+/**************************************************************************/
+/*!
+    @brief  More acurate timer control public method for void loop()
+*/
+/**************************************************************************/
 void GGreg20_V3::keepAlive(){
   counter();
 }
 
-// Interrupt Service Routine, private method
+
+/**************************************************************************/
+/*!
+    @brief  Interrupt Service Routine, calculates all values, private method
+*/
+/**************************************************************************/
 void GGreg20_V3::counter(){
   detachInterrupt(digitalPinToInterrupt(__pin));
   if (digitalRead(__pin) == LOW && (millis() - now) >= GGREG20_V3_DEBOUNCE_TIME) {
@@ -87,27 +108,52 @@ void GGreg20_V3::counter(){
   attachInterrupt(digitalPinToInterrupt(__pin), counter, LOW);
 }
 
-// Current CPM value fetch public method
+
+/**************************************************************************/
+/*!
+    @brief  Returns current Counts per Minute (CPM) value, public method
+*/
+/**************************************************************************/
 int GGreg20_V3::read_cpm(){
   return cpm;
 }
 
-// Ionizing power MA5 value fetch public method
+
+/**************************************************************************/
+/*!
+    @brief  Returns ionizing radiation power MA5 value, public method
+*/
+/**************************************************************************/
 float GGreg20_V3::read_ma5(){
   return ma5_val;
 }
 
-// Current one-minute cycle timer value fetch public method
+
+/**************************************************************************/
+/*!
+    @brief  Returns current one-minute cycle timer value, public method
+*/
+/**************************************************************************/
 long GGreg20_V3::read_time(){
   return (millis() - meas_start);
 }
 
-// Current MA5-array pointer value fetch public method
+
+/**************************************************************************/
+/*!
+    @brief  Returns current MA5-array pointer value, public method
+*/
+/**************************************************************************/
 byte GGreg20_V3::read_ma5_pointer(){
   return (ma5_pointer);
 }
 
-// Current number of MA5-array elements fullfilment value fetch public method
+
+/**************************************************************************/
+/*!
+    @brief  Returns current number of MA5-array elements fullfilment value, public method
+*/
+/**************************************************************************/
 int GGreg20_V3::read_ma5_arr_elements(){
   return (ma5_arr_elements);
 }
