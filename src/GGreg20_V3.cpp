@@ -112,6 +112,7 @@ void GGreg20_V3::counter(){
 /**************************************************************************/
 /*!
     @brief  Returns current Counts per Minute (CPM) value, public method
+    @return cpm Instant Counts per Minute (CPM) value
 */
 /**************************************************************************/
 int GGreg20_V3::read_cpm(){
@@ -122,6 +123,7 @@ int GGreg20_V3::read_cpm(){
 /**************************************************************************/
 /*!
     @brief  Returns ionizing radiation power MA5 value, public method
+    @return ma5_val Cummulative moving avegage five-minute value
 */
 /**************************************************************************/
 float GGreg20_V3::read_ma5(){
@@ -132,6 +134,7 @@ float GGreg20_V3::read_ma5(){
 /**************************************************************************/
 /*!
     @brief  Returns current one-minute cycle timer value, public method
+    @return One-minute time counter value in milliseconds
 */
 /**************************************************************************/
 long GGreg20_V3::read_time(){
@@ -142,6 +145,7 @@ long GGreg20_V3::read_time(){
 /**************************************************************************/
 /*!
     @brief  Returns current MA5-array pointer value, public method
+    @return ma5_pointer Current MA5-array pointer value [0-4]
 */
 /**************************************************************************/
 byte GGreg20_V3::read_ma5_pointer(){
@@ -152,6 +156,7 @@ byte GGreg20_V3::read_ma5_pointer(){
 /**************************************************************************/
 /*!
     @brief  Returns current number of MA5-array elements fullfilment value, public method
+    @return ma5_arr_elements Current number of MA5-elements in the array value [0-5]
 */
 /**************************************************************************/
 int GGreg20_V3::read_ma5_arr_elements(){
