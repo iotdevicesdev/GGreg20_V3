@@ -4,6 +4,8 @@ IoT-devices GGreg20_V3 - an ionizing radiation detector module driver library fo
 
 This Library allows to measure and get five-minute moving average (MA5) valule of ionizing radiation power in microsieverts per hour using GGreg20_V3 detector module manufactured by IoT-devices LLC. 
 
+![GGreg20_V3 Driver Library Usage Example](https://github.com/iotdevicesdev/GGreg20_V3/blob/main/extras/GGreg20_V3_Library_Example_Test_ArduinoComunityLogo_IoT-devicesLogo.png)
+
 ## Library constants and their settings
 - Measurement cycle is set to 60 seconds. And can be changed at header file via GGREG20_V3_MEASURE_TIME.
 - SBM-20 Conversion Factor is set as CPM * 0.0054 = uSv/h. And can be changed at header file via GGREG20_V3_CONVFACTOR.
