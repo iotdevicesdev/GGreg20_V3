@@ -1,2 +1,3 @@
-# IoT-devices_GGreg20_V3_Arduino
-IoT-devices GGreg20_V3 ionizing radiation detector module driver library for Arduino
+# IoT-devices GGreg20_V3 with SBM-20 Arduino Library
+
+IoT-devices GGreg20_V3 - an ionizing radiation detector module driver library for Arduino
