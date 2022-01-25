@@ -128,6 +128,6 @@ We recommend that you do this:
 
 The figure shows a diagram and a photo of how the capacitor is connected. The presence of a capacitor makes it impossible to block the input of the controller and the circuit will work stably.
 
-FIGURE
+![Voltage level matching](https://github.com/iotdevicesdev/GGreg20_V3/blob/main/extras/GGreg20_V3_Voltage-Level-Matching-3v3Output-5vInput_wLogo.jpg)
 
 Note that this solution takes into account the complex internal processes that occur between the connected electronic components, which can not be described in a limited amount of this document and was chosen by experts as optimal to solve this particular problem.
