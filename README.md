@@ -12,8 +12,7 @@ This Library allows to measure and get five-minute moving average (MA5) valule o
 - Debounce timeout is set to 5 milliseconds. And can be changed at header file via GGREG20_V3_DEBOUNCE_TIME.
 
 ## Library Install
-### Install via Library Manager
-> Note. This installation method is under construction. Please use Manual Installation.
+### Install via Library Manager under Arduino IDE
 1. Go to the **Tools** -> **Manage Libraries** menu
 2. Search for **GGreg20_V3** library
 3. Click **install** button
