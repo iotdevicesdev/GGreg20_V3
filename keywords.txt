@@ -1,0 +1,22 @@
+# Syntax Coloring Map For ExampleLibrary
+
+# Datatypes (KEYWORD1)
+
+# Methods and Functions (KEYWORD2)
+begin KEYWORD2
+read_cpm KEYWORD2
+read_ma5 KEYWORD2
+read_time KEYWORD2
+read_ma5_pointer KEYWORD2
+read_ma5_arr_elements KEYWORD2
+keepAlive KEYWORD2
+counter KEYWORD2
+
+
+# Instances (KEYWORD2)
+GGREG	KEYWORD2
+
+# Constants (LITERAL1)
+GGREG20_V3_DEBOUNCE_TIME	LITERAL1
+GGREG20_V3_MEASURE_TIME	LITERAL1
+GGREG20_V3_CONVFACTOR	LITERAL1
