@@ -16,6 +16,10 @@ This Library allows to measure and get five-minute moving average (MA5) valule o
 1. Go to the **Tools** -> **Manage Libraries** menu
 2. Search for **GGreg20_V3** library
 3. Click **install** button
+
+See also on official Arduino site:
+https://www.arduino.cc/reference/en/libraries/ggreg20_v3/
+
 ### Manual install
 1. Download from GitHub
 2. Unzip archive and place its contents under /Arduino/libraries/
