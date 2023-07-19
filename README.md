@@ -2,6 +2,8 @@
 
 # IoT-devices GGreg20_V3 Arduino Driver Library
 
+<a href="https://www.tindie.com/stores/iotdev/?ref=offsite_badges&utm_source=sellers_iotdevices&utm_medium=badges&utm_campaign=badge_large"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-larges.png" alt="I sell on Tindie" width="200" height="104"></a>
+
 IoT-devices GGreg20_V3 - an ionizing radiation detector module driver library for Arduino
 
 This Library allows to measure and get five-minute moving average (MA5) valule of ionizing radiation power in microsieverts per hour using GGreg20_V3 detector module manufactured by IoT-devices LLC. 
